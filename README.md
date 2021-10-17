@@ -1,5 +1,7 @@
 # RSE-ops Readthedocs
 
+![img/rse-ops-librarian.png](img/rse-ops-librarian.png)
+
 This is a documentation template that can be deployed to read-the-docs, or
 if built and pushed manually, to GitHub pages. [Readthedocs](readthedocs.org/) is nice because
 it will maintain a record of previous versions. The template is provided in
@@ -13,6 +15,18 @@ your code (recommended).
  - Markdown or Restructured syntax
  - Python gallery with examples (if you have a Python project)
 
+Here is the basic template design - we use a predominance of blue and white, with accents
+in gray and bits of RSE purple:
+
+![img/install-examples.png](img/install-examples.png)
+
+And here is how the examples in [examples](examples) show up in the docs.
+
+![img/code-examples.png](img/code-examples.png)
+
+The cool thing about the examples (other than being in the repository root and showing
+up in the docs) is that they are downloadable as a Python file, a Jupyter notebook,
+or an entire zip file.
 
 ## Install
 
