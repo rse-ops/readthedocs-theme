@@ -73,7 +73,9 @@ Then open your browser to [http://127.0.0.1:9999](http://127.0.0.1:9999)
 
 The easiest thing to do is have an automated build deployed to readthedocs.
 You can login there, connect the repository, and then configure the build.
-**Importantly** you will need to go into "Advanced Settings" and for "Requirements file"
+Given that the requirements.txt is in the root of your docs folder (alongside the conf.py)
+you shouldn't need to tell Readthedocs where it is. However, if you change this location
+or the name of the file, you will need to go into "Advanced Settings" and for "Requirements file"
 put docs/requirements.txt. Otherwise, the extra modules will not be installed and the docs cannot
 be built! After you have made this connection, any push to main will re-render the
 docs. You can see the example docs on ReadtheDocs [here](https://rse-ops-readthedocs.readthedocs.io/en/latest/).
