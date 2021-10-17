@@ -8,7 +8,7 @@ it will maintain a record of previous versions. The template is provided in
 the [docs](docs) folder as very likely you will maintain the documentation alongside
 your code (recommended).
 
-🚧️ **under developemnt** 🚧️
+🚧️ **under development** 🚧️
 
 ## Features
 
