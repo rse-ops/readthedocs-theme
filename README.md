@@ -69,8 +69,16 @@ Then open your browser to [http://127.0.0.1:9999](http://127.0.0.1:9999)
 
 ## Deploying
 
+### Deploy to ReadtheDocs
+
 The easiest thing to do is have an automated build deployed to readthedocs.
 You can login there, connect the repository, and then configure the build.
+**Importantly** you will need to go into "Advanced Settings" and for "Requirements file"
+put docs/requirements.txt. Otherwise, the extra modules will not be installed and the docs cannot
+be built! After you have made this connection, any push to main will re-render the
+docs. You can see the example docs on ReadtheDocs [here](https://rse-ops-readthedocs.readthedocs.io/en/latest/).
+
+### GitHub
 
 **TODO** If you'd like to deploy during CI, recipes are included here for both CircleCI
 and GitHub Actions.
