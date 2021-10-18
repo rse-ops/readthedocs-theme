@@ -90,8 +90,13 @@ You can see the example on GitHub pages [here](https://rse-ops.github.io/readthe
 ### CircleCI Preview
 
 CircleCI is unique in that it allows you to preview! So here we have added a [.circleci](.circleci)
-folder to allow for that. You'll need to connect your repository to CircleCI and ensure
-this folder is in the root. Once you have it connected, you should be able to follow
+folder to allow for that. You'll need to connect your repository to [CircleCI](https://app.circleci.com) and ensure
+this folder is in the root. Some recommended settings -> Advanced for your project:
+
+ - only build pull requests
+ - auto cancel redundant builds
+  
+Once you have it connected, you should be able to follow
 the project and then click on the "Artifacts" tab to see associated artifacts.
 
 
