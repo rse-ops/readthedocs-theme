@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing a documentation change &mdash; rse-ops 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/rseops.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/rseops.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery-rendered-html.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/reset-syntax.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Guides" href="../guides/index.html" />
+    <link rel="prev" title="Tutorials" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> rse-ops
+            <img src="../_static/rse-ops-circle.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Contributing a documentation change</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#download-the-documentation">Download the documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-required-libraries">Install required libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build-and-preview-the-documentation">Build and preview the documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-new-branch">Create a new branch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#make-a-change-to-the-documentation">Make a change to the documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#commit-your-changes-and-make-a-pull-request">Commit your changes and make a pull request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-happens-next">What happens next?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../auto_examples/index.html">General examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently asked questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">rse-ops</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Tutorials</a> &raquo;</li>
+      <li>Contributing a documentation change</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="contributing-a-documentation-change">
+<h1>Contributing a documentation change<a class="headerlink" href="#contributing-a-documentation-change" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial will take you through the process of:</p>
+<ul class="simple">
+<li><p>Downloading the current documentation</p></li>
+<li><p>Installing required libraries</p></li>
+<li><p>Building and previewing the documentation</p></li>
+<li><p>Creating a new git branch</p></li>
+<li><p>Making a change to the documentation</p></li>
+<li><p>Committing the changes and making a pull request</p></li>
+</ul>
+<section id="download-the-documentation">
+<h2>Download the documentation<a class="headerlink" href="#download-the-documentation" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>Sign up to <a class="reference external" href="https://github.com">GitHub</a> and <a class="reference external" href="https://github.com/rse-ops/readthedocs-theme/fork">fork the project</a></p></li>
+<li><p>Install <a class="reference external" href="https://git-scm.com/downloads">Git</a>. If you’re new to Git, the Django project has a good introduction on <a class="reference external" href="https://docs.djangoproject.com/en/3.0/internals/contributing/writing-code/working-with-git/">working with Git and GitHub</a>. You can also take a look at the <a class="reference external" href="https://guides.github.com/introduction/flow/">GitHub branch-based workflow</a></p></li>
+<li><p>Using the command line, <code class="docutils literal notranslate"><span class="pre">cd</span></code> to the directory where you want your local copy of the software to live. The documentation can then be downloaded
+using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/YourUsername/readthedocs-theme.git
+</pre></div>
+</div>
+</li>
+<li><p>(Optional) We recommend that you install your development copy of the software
+in a virtual environment.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python -m venv env
+</pre></div>
+</div>
+</li>
+<li><p>Install the cloned copy of the software (<code class="docutils literal notranslate"><span class="pre">-e</span></code> for editable or development mode):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install -e project/
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="install-required-libraries">
+<h2>Install required libraries<a class="headerlink" href="#install-required-libraries" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install -r requirements.txt
+</pre></div>
+</div>
+</section>
+<section id="build-and-preview-the-documentation">
+<h2>Build and preview the documentation<a class="headerlink" href="#build-and-preview-the-documentation" title="Permalink to this headline">¶</a></h2>
+<p>To build the documentation locally, navigate to the <code class="docutils literal notranslate"><span class="pre">docs</span></code> directory and
+run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> docs/
+$ make html
+</pre></div>
+</div>
+<p>Occasionally you may need to clean up the generated files before a change
+gets applied:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ make clean <span class="o">&amp;&amp;</span> make html
+</pre></div>
+</div>
+<p>The HTML generated by the build can be viewed by opening
+<code class="docutils literal notranslate"><span class="pre">_build/html/index.html</span></code> in a web browser or by doing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd _build/html
+$ python -m http.server 9999
+</pre></div>
+</div>
+<p>And then going to <a class="reference external" href="http://localhost:9999">http://localhost:9999</a></p>
+</section>
+<section id="create-a-new-branch">
+<h2>Create a new branch<a class="headerlink" href="#create-a-new-branch" title="Permalink to this headline">¶</a></h2>
+<p>Create a new branch <code class="docutils literal notranslate"><span class="pre">my-changes</span></code> for your changes (you can choose any name
+that you want instead). Any changes made in this branch will be specific to
+it and won’t affect the main copy (the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch) of
+the documentation:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git checkout -b my-changes
+</pre></div>
+</div>
+</section>
+<section id="make-a-change-to-the-documentation">
+<h2>Make a change to the documentation<a class="headerlink" href="#make-a-change-to-the-documentation" title="Permalink to this headline">¶</a></h2>
+<p>At this point you can make a change to a markdown or rst file in the docs!
+Let’s say we add <code class="docutils literal notranslate"><span class="pre">reading.md</span></code> to the tutorials folder.
+When you add this new page, make sure that it appears on a toc tree somewhere.
+If not, you’ll see:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>checking consistency... [/path/to]/readthedocs-theme/docs/tutorials/reading.md: WARNING: document isn&#39;t included in any toctree
+</pre></div>
+</div>
+<p>Make sure to preview the docs, as shown above, to see that the page is visible.
+Here is how to include a new page in the docs. Let’s say that we are adding
+the reading.rst file to the tutorials folder. You’dd add it to
+<code class="docutils literal notranslate"><span class="pre">tutorials/index.md</span></code>, as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+   <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">1</span>
+
+   <span class="n">installation</span>
+   <span class="n">contributing_code</span>
+   <span class="n">contributing_docs</span>
+   <span class="n">reading</span>
+</pre></div>
+</div>
+<p>If you rebuild the HTML you should find that the warning is gone and that
+your new page is reachable from the main documentation page. You have the choice
+to write markdown or rst. If you need help with the reST markup then you can
+check out Sphinx’s <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html?highlight=re">reStructuredText primer</a></p>
+<p>There are also a number of directives that tell Sphinx to do certain things
+(like inserting code blocks or a table of contents). Sphinx has a list of
+these <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html">here</a>.</p>
+<p>For more information on writing documentation see
+<a class="reference internal" href="../guides/writing_documentation.html"><span class="doc">writing documentation</span></a>.</p>
+<p>Just like before, you should build and preview the updated page. When you’re
+happy with the results move on to the next section.</p>
+</section>
+<section id="commit-your-changes-and-make-a-pull-request">
+<h2>Commit your changes and make a pull request<a class="headerlink" href="#commit-your-changes-and-make-a-pull-request" title="Permalink to this headline">¶</a></h2>
+<p>First we add our new file to git:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add tutorials/reading.md
+</pre></div>
+</div>
+<p>And then stage the remaining changes (<code class="docutils literal notranslate"><span class="pre">-a</span></code>) and commit at the same time:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git commit -am &quot;Add new reading.md on &lt;x&gt;&quot;
+</pre></div>
+</div>
+<p>After committing the changes, send them to your fork:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push origin my-changes
+</pre></div>
+</div>
+<p>You can create a pull request by visiting the <a class="reference external" href="https://github.com/rse-ops/readthedocs-theme">project GitHub page</a> where you
+should see your branch under <em>“Your recently push branches”</em>. Click <em>“Compare &amp;
+pull request”</em> and fill out the title (with a <code class="docutils literal notranslate"><span class="pre">[WIP]</span></code> prefix, i.e.
+<code class="docutils literal notranslate"><span class="pre">[WIP]</span> <span class="pre">Add</span> <span class="pre">new</span> <span class="pre">reading</span> <span class="pre">example</span> <span class="pre">for</span> <span class="pre">&lt;x&gt;</span></code>) and follow the
+instructions in the main entry window. At this point your code will be tested via
+continuous integration. If you set up Artifacts preview (e.g., CircleCI)
+then you should be able to click on the Artifacts tab in the CircleCI interface
+and click any html file to preview.</p>
+</section>
+<section id="what-happens-next">
+<h2>What happens next?<a class="headerlink" href="#what-happens-next" title="Permalink to this headline">¶</a></h2>
+<p>One or more reviewers would look at your pull request and may make suggestions,
+ask for clarification or request changes. Once the reviewers were happy,
+the pull request would be approved and your changes merged into the
+<code class="docutils literal notranslate"><span class="pre">main</span></code> branch.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../guides/index.html" class="btn btn-neutral float-right" title="Guides" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021-2021, RSE-ops and contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
