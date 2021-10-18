@@ -1,17 +1,23 @@
-on: [push]
+on: 
+  push:
+    branches:
+      - main  
+  pull_request: []
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy ReadtheDocs to GitHub Pages
+    name: Deploy ReadTheDocs to GitHub Pages
     steps:
       - uses: actions/checkout@v2
-      - uses: rse-ops/librarian/readthedocs@add/readthedocs-render
+
+        # Buid on push (but no deploy)
+      - uses: rse-ops/librarian/readthedocs@main
+        if: (github.event_name == 'push')
+
+      - uses: rse-ops/librarian/readthedocs@main
+        if: (github.event_name == 'pull_request')
         with:        
-          dir: docs
-          
-          # Path relative to docs folder specified above
-          requirements: requirements.txt 
           token: ${{ secrets.GITHUB_TOKEN }} 
-          branch: gh-pages 
+          deploy: "false"
 
