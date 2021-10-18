@@ -80,10 +80,12 @@ put docs/requirements.txt. Otherwise, the extra modules will not be installed an
 be built! After you have made this connection, any push to main will re-render the
 docs. You can see the example docs on ReadtheDocs [here](https://rse-ops-readthedocs.readthedocs.io/en/latest/).
 
-### GitHub
+### Deploy to GitHub Pages
 
-**TODO** If you'd like to deploy during CI, recipes are included here for both CircleCI
-and GitHub Actions.
+A [.github/workflows/build-deploy.yaml](.github/workflows/build-deploy.yaml) is provided
+that will build your docs on a PR, and deploy on merge to main. You can customize the triggers
+and the branches, if desired. Please [open an issue](https://github.com/rse-ops/readthedocs-theme/issues) if you need any help.
+
 
 License
 -------
