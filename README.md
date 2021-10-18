@@ -98,7 +98,8 @@ this folder is in the root. Some recommended settings -> Advanced for your proje
   
 Once you have it connected, you should be able to follow
 the project and then click on the "Artifacts" tab to see associated artifacts.
-
+An example build with artifacts can be seen [here](https://app.circleci.com/pipelines/github/rse-ops/readthedocs-theme/2/workflows/a8f1a404-c440-4e3a-b68d-1ff4ef4860cf/jobs/2/artifacts) (note that they likely expire after some time,
+so navigate around to find a more recent build!)
 
 License
 -------
