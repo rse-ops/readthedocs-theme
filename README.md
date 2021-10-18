@@ -85,6 +85,14 @@ docs. You can see the example docs on ReadtheDocs [here](https://rse-ops-readthe
 A [.github/workflows/build-deploy.yaml](.github/workflows/build-deploy.yaml) is provided
 that will build your docs on a PR, and deploy on merge to main. You can customize the triggers
 and the branches, if desired. Please [open an issue](https://github.com/rse-ops/readthedocs-theme/issues) if you need any help.
+You can see the example on GitHub pages [here](https://rse-ops.github.io/readthedocs-theme/).
+
+### CircleCI Preview
+
+CircleCI is unique in that it allows you to preview! So here we have added a [.circleci](.circleci)
+folder to allow for that. You'll need to connect your repository to CircleCI and ensure
+this folder is in the root. Once you have it connected, you should be able to follow
+the project and then click on the "Artifacts" tab to see associated artifacts.
 
 
 License
