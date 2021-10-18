@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy ReadtheDocs to GitHub Pages
+    steps:
+      - uses: actions/checkout@v2
+      - uses: rse-ops/librarian/readthedocs@add/readthedocs-render
+        with:        
+          dir: docs
+          
+          # Path relative to docs folder specified above
+          requirements: requirements.txt 
+          token: ${{ secrets.GITHUB_TOKEN }} 
+          branch: gh-pages 
+
